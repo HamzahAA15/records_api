@@ -45,7 +45,7 @@ func (rh *RecordsHandler) GetAllRecords(c *fiber.Ctx) error {
 
 		return c.Status(fiber.StatusInternalServerError).JSON(ResponsePayload{
 			Code: fiber.StatusInternalServerError,
-			Msg:  fmt.Sprintf("failed to get records: %s", err.Error()),
+			Msg:  fmt.Sprintf("failed [GetFilteredRecords]: %s", err.Error()),
 		})
 	}
 
