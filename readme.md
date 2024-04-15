@@ -8,7 +8,6 @@ Records API Service is a service that enables you to get the data recorded of st
 
 - Modular project structure with dependency injection on the repository, service & controller layers.
 - Using Docker Compose to ease the experience of using this service
-- Using inMemory Cache to improve api latency for books & order
 - `Ready to use DB, since we run migration and data seeder only for you :)`
 
 ## Usage
@@ -29,10 +28,10 @@ import the JSON collection of request from the attachment of email into API plat
 ### Records Endpoints
 <details>
 
-**Get list of books**
+**Get list of records**
 - **URL:** `/api/records`
 - **Method:** `GET`
-- **Description:** Retrieves a list of books available in the store.
+- **Description:** Retrieves a list of records available as per criteria requested.
 - **Request Body:** 
   - minCount is minimal count of sum of Marks, must be lower and not equal to maxCount
   - maxCount is maximal count of sum of marks, must be higher and not equal to minCount
